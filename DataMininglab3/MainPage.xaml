@@ -5,9 +5,14 @@
     xmlns:local="using:DataMininglab3"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="456.161"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    >
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.5,0.5" Margin="-1.201,-0.007,1.201,-198.884" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <TextBlock HorizontalAlignment="Left" Margin="22,10,0,0" TextWrapping="Wrap" Name="Iterations_Label"  Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="-0.999,-1.904" />
+        <canvas:CanvasControl  UseLayoutRounding="true" HorizontalAlignment="Center" x:Name="front_canvas"  Draw="canvas_Draw" Height="601"  VerticalAlignment="Bottom" Width="626.803" Margin="645,0,8,4.891" />
+        <canvas:CanvasControl  UseLayoutRounding="true" HorizontalAlignment="Center" x:Name="result_canvas"  Draw="canvas_Draw_Result" Height="601"  VerticalAlignment="Top" Width="629.803" Margin="10,49,640,0" />
 
     </Grid>
 </Page>
